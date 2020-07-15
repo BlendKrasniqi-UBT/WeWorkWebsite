@@ -52,10 +52,10 @@ $home = new Home();
 
     <div class="section1">
         <div class="section1content">
-        <h1>WeWork</h1>
-        <p>Office space and workspace solutions</p>
-        <button id="button" onclick="location.href='about.php'" type="button">Learn More</button>
-        <button id="button" onclick="location.href='contact.php'" type="button">Contact Us</button>
+        <h1><?php $home->SectionOneTitle(); ?></h1>
+        <p><?php $home->SectionOneSmallTitle(); ?></p>
+        <button id="button" onclick="location.href='about.php'" type="button"><?php $home->SectionOneButtonOne(); ?></button>
+        <button id="button" onclick="location.href='contact.php'" type="button"><?php $home->SectionOneButtonTwo(); ?></button>
         </div>
     </div>
 
@@ -67,21 +67,21 @@ $home = new Home();
         <i class="fas fa-map-marker-alt"></i>
         </span>
         <h2><?php $home->FeatureTitleOne();?></h2>
-        <p>Whole buildings to full or partial floors that are tailored to enhance your unique business and culture.</p>
+        <p><?php $home->FeaturesDescOne(); ?></p>
         </div>
         <div class="feature">
         <span style="font-size: 50px; color: #00897b;">
         <i class="fas fa-people-arrows"></i>
         </span>
-        <h2>Coworking Spaces</h2>
-        <p>Dedicated desks or hot desks that come with access to meeting rooms, business-class printing, and common amenities.</p>
+        <h2><?php $home->FeaturesTitleTwo(); ?></h2>
+        <p><?php $home->FeaturesDescTwo(); ?></p>
         </div>
         <div class="feature">
         <span style="font-size: 50px; color: #00897b;">
         <i class="fas fa-user-shield"></i>
         </span>
-        <h2>Flexible private offices</h2>
-        <p>Move-in ready offices and configurable suites that flex to accommodate teams of any size.</p>
+        <h2><?php $home->FeaturesTitleThree(); ?></h2>
+        <p><?php $home->FeaturesDescThree(); ?></p>
         </div>
         </div>
     </div>
@@ -92,36 +92,36 @@ $home = new Home();
         </div>
 
         <div class="section3info">
-        <h1>Over 500 locations worldwide</h1>
-        <p>Whether you need to build a headquarters in New York, expand into the London market, or secure coworking space in Tokyo, we have office spaces to rent worldwide.</p>
+        <h1><?php $home->SectionTwoTitle(); ?></h1>
+        <p><?php $home->SectionTwoDesc(); ?></p>
         </div>
     </div>
 
     <div class="section4">
-        <h1>Our Staff</h1>
+        <h1><?php $home->OurStaffTitle(); ?></h1>
         <div class="listingrow">
         <div class="feature">
         <img class="person" src="img/people/person1.jpg">
-        <h2>Adam Neumann</h2>
-        <p>CEO</p>
+        <h2><?php $home->OurStaff1Name(); ?></h2>
+        <p><?php $home->OurStaff1position(); ?></p>
         </div>
         <div class="feature">
         <img class="person" src="img/people/person2.jpg">
-        <h2>Laura Nelson</h2>
-        <p>Executive Chairman</p>
+        <h2><?php $home->OurStaff2Name(); ?></h2>
+        <p><?php $home->OurStaff2position(); ?></p>
         </div>
         <div class="feature">
        <img class="person" src="img/people/person3.jpg">
-        <h2>Betta Williams</h2>
-        <p>CCO</p>
+        <h2><?php $home->OurStaff3Name(); ?></h2>
+        <p><?php $home->OurStaff3position(); ?></p>
         </div>
         </div>
     </div>
 
     <div class="section5">
         <div class="section5info">
-        <h1>Moving forward, together</h1>
-        <p>WeWork is deeply committed to supporting our member companies. As we look ahead to the new normal in the workplace, WeWork is redesigning our spaces for your health and safety.</p>
+        <h1><?php $home->SectionThreeTitle(); ?></h1>
+        <p><?php $home->SectionTwoDesc(); ?></p>
         </div>
         <div class="section5photo">
         <img id="section5photo" src="img/section5photo.jpg">
