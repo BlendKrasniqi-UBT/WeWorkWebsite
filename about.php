@@ -50,14 +50,14 @@ session_start();
 
     <div class="maincontainer">
 
-    <h1 style="text-align: center;">About Us</h1>
-    <p>WeWork is an American commercial real estate company that provides shared workspaces for technology startups and services for other enterprises. Founded in 2010, it is headquartered in New York City. As of 2018, WeWork managed over 4 million square metres. WeWork's parent company is The We Company. WeWork designs and builds physical and virtual shared spaces and office services for entrepreneurs and companies. At one time, WeWork had more than 5,000 employees in over 280 locations, spread across 86 cities in 32 countries.</p>
-    <p>When we started WeWork in 2010, we wanted to build more than beautiful, shared office spaces. We wanted to build a community. A place you join as an individual, 'me', but where you become part of a greater 'we'. A place where we’re redefining success measured by personal fulfillment, not just the bottom line. Community is our catalyst.</p>
+    <h1 style="text-align: center;"><?php $about->AboutUsTitle(); ?></h1>
+    <p><?php $about->AboutUsDesc1(); ?></p>
+    <p><?php $about->AboutUsDesc2(); ?></p>
     <br/>
     <img id="aboutphoto" src="img/aboutphoto.jpg">
     <br/>
-    <p>Our mission doesn’t end with the small businesses and entrepreneurs that call us home. We believe in empowering our team to create their own life's work. We move fast and we challenge each other, but we look after each other and care about our culture, which makes working here extremely rewarding. There's a lot of work left for us to do, and we couldn't do it without a single member of our team.</p>
-    <p>As a first-mover in the industry, WeWork has been a leader in fostering innovation and collaboration in the workplace for over a decade. Today, with over 600,000 members around the world, we are once again in a position to redefine what the future of work looks like as we face the new realities of a post COVID-19 world. While so much has changed—WeWork’s promise to deliver exceptional, innovative, and safe spaces, has not.</p>
+    <p><?php $about->AboutUsDesc3(); ?></p>
+    <p><?php $about->AboutUsDesc4(); ?></p>
     </div>
 
 </div>
