@@ -49,14 +49,17 @@ if (!$adminCheck->isAdmin()) {
         <li><a href="about.php">About Us</a></li>
         <li><a href="gallery.php">Gallery</a></li>
         <li><a href="contact.php">Contact Us</a></li>
-        <li id="active"><a href="blog.php">Blog</a></li>
+        <li><a href="blog.php">Blog</a></li>
         </ul>
     </div>
 
     <div class="maincontainer">
+			<div style="margin: 0 auto;">
         <h1 style="text-align: center">Admin Panel</h1>
-        <button id="button" onclick="location.href='admin/users.php'" type="button">Manage Users</button>
-				<button id="button" onclick="location.href='admin/blog.php'" type="button">Manage Blog</button>
+        <button id="button" onclick="location.href='admin-users.php'" type="button">Manage Users</button>
+				<button id="button" onclick="location.href='admin-blog.php'" type="button">Manage Blog</button>
+				<button id="button" onclick="location.href='admin-contactus.php'" type="button">Manage Contact Us</button>
+			</div>
     </div>
 
 
@@ -67,6 +70,5 @@ if (!$adminCheck->isAdmin()) {
        <p><a style="color: skyblue" href="https://github.com/BlendKrasniqi37552/WeWorkWebsite">GitHub</a> | Lirian Dragusha | Blend Krasniqi | 2020</p>
     </div>
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/slide.js"></script>
 </body>
 </html>

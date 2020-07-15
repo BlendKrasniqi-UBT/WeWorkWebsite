@@ -1,10 +1,10 @@
 <?php
 
 class About {
-  public $connection;
-  public $result;
-  public $row;
-  public $query;
+  private $connection;
+  private $result;
+  private $row;
+  private $query;
 
   public function AboutUsTitle() {
     $this->connection = new DBConnection();

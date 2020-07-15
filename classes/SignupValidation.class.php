@@ -1,15 +1,15 @@
 <?php
 
 class SignupValidation {
-  public $nameErr;
-  public $emailErr;
-  public $passwordErr;
-  public $confirmPasswordErr;
-  public $showError;
-  public $nameCheck;
-  public $emailCheck;
-  public $passwordCheck;
-  public $errorCount;
+  private $nameErr;
+  private $emailErr;
+  private $passwordErr;
+  private $confirmPasswordErr;
+  private $showError;
+  private $nameCheck;
+  private $emailCheck;
+  private $passwordCheck;
+  private $errorCount;
 
   public function doSignupValidation() {
     $this->nameErr = "";

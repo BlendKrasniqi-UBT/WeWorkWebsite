@@ -1,15 +1,15 @@
 <?php
 
 class Login {
-  public $email;
-  public $password;
-  public $message;
-  public $user_type;
-  public $test;
-  public $connection;
-  public $sql;
-  public $query;
-  public $user;
+  private $email;
+  private $password;
+  private $message;
+  private $user_type;
+  private $test;
+  private $connection;
+  private $sql;
+  private $query;
+  private $user;
 
   public function __construct($email, $password){
     $this->email = $email;

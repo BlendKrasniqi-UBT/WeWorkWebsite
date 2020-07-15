@@ -57,54 +57,19 @@
     <div class="maincontainer">
     <h1 style="text-align: center;">Sign up:</h1>
         <p style="text-align:center;color:red;">
-          <?php
-          $pathUrl = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-          if (strpos($pathUrl, "name=empty") == true) {
-            echo 'Name is empty.';
-          }
-          elseif (strpos($pathUrl, "name=invalid") == true) {
-            echo 'Name invalid, only letters allowed. Must be more than 2 characters.';
-          }
-          elseif (strpos($pathUrl, "email=empty") == true) {
-            echo 'Email is empty';
-          }
-          elseif (strpos($pathUrl, "email=invalid") == true) {
-            echo 'Please write a valid email';
-          }
-          elseif (strpos($pathUrl, "password=empty") == true) {
-            echo 'Password is empty';
-          }
-          elseif (strpos($pathUrl, "password=invalid") == true) {
-            echo 'Password must have 6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter.';
-          }
-          elseif (strpos($pathUrl, "confirmpass=empty") == true) {
-            echo 'Confirm password is empty';
-          }
-          elseif (strpos($pathUrl, "confirmpass=invalid") == true) {
-            echo 'Passwords do not match';
-          }
-          elseif (strpos($pathUrl, "submit=success") == true) {
-            echo 'Account successfully created!';
-          }
-          elseif (strpos($pathUrl, "submit=failed") == true) {
-            echo 'Something went wrong.';
-          }
-          elseif (strpos($pathUrl, "submit=exists") == true) {
-            echo 'User already exists. This email is already in the database.';
-          }
-          ?>
+            <?php require 'includes/signuperrors.inc.php'; ?>
         </p>
     <div class="forma">
-    <form name="signupForm" action="includes/signup.inc.php" onsubmit="return validateSignup()" method="post" required>
+    <form name="signupForm" action="includes/signup.inc.php" onsubmit="return validateSignup()" method="post" >
         <label for="name">Enter your name:</label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name..." required >
+        <input type="text" id="name" name="name" placeholder="Enter your name..."  >
         <label for="email">Enter your e-mail:</label><br>
-        <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+        <input type="email" id="email" name="email" placeholder="Enter your email..." >
         <br>
         <label for="password">Enter your password:</label><br>
-        <input type="password" id="password" name="password" placeholder="Enter your password..." required >
+        <input type="password" id="password" name="password" placeholder="Enter your password..."  >
         <label for="confirmpassword">Confirm your password:</label><br>
-        <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm your password..." required>
+        <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm your password..." >
         <br>
         <br>
         <input id="button" type="submit" name="submit" value="Sign Up">
@@ -121,6 +86,6 @@
     </div>
     </div>
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/signup.js"></script>
+<!-- <script type="text/javascript" src="js/signup.js"></script> -->
 </body>
 </html>

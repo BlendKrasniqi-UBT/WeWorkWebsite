@@ -1,16 +1,16 @@
 <?php
 
 class Contact {
-  public $name;
-  public $email;
-  public $city;
-  public $placeofwork;
-  public $gender;
-  public $entertext;
+  private $name;
+  private $email;
+  private $city;
+  private $placeofwork;
+  private $gender;
+  private $entertext;
 
-  public $connection;
-  public $sql;
-  public $query;
+  private $connection;
+  private $sql;
+  private $query;
 
 
   public function __construct($name, $email, $city, $placeofwork, $gender, $entertext){

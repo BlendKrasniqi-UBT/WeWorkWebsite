@@ -1,6 +1,7 @@
 <?php
 require 'includes/class-autoload.inc.php';
 session_start();
+$about = new About();
 ?>
 <!DOCTYPE html>
 <html>
@@ -66,7 +67,6 @@ session_start();
         <p>All Rights Reserved &copy;</p>
        <p><a style="color: skyblue" href="https://github.com/BlendKrasniqi37552/WeWorkWebsite">GitHub</a> | Lirian Dragusha | Blend Krasniqi | 2020</p>
     </div>
-<script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

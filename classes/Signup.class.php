@@ -1,18 +1,18 @@
 <?php
 
 class Signup {
-  public $name;
-  public $email;
-  public $password;
-  public $user_type;
-  public $connection;
-  public $sql;
-  public $query;
-  public $user;
-  public $sqlCheck;
-  public $queryCheck;
-  public $userCheck;
-  public $userError;
+  private $name;
+  private $email;
+  private $password;
+  private $user_type;
+  private $connection;
+  private $sql;
+  private $query;
+  private $user;
+  private $sqlCheck;
+  private $queryCheck;
+  private $userCheck;
+  private $userError;
 
   public function __construct($name, $email, $password){
     $this->name = $name;
@@ -54,7 +54,7 @@ class Signup {
       if($this->query->execute()) {
           header("Location: ../signup.php?submit=success");
       } else {
-          hheader("Location: ../signup.php?submit=failed");
+          header("Location: ../signup.php?submit=failed");
       }
 
 

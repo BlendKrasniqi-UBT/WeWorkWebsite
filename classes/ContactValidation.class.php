@@ -1,17 +1,17 @@
 <?php
 
 class ContactValidation {
-  public $nameErr;
-  public $emailErr;
-  public $cityErr;
-  public $placeofworkErr;
-  public $genderErr;
-  public $entertextErr;
-  public $showError;
-  public $nameCheck;
-  public $emailCheck;
-  public $passwordCheck;
-  public $errorCount;
+  private $nameErr;
+  private $emailErr;
+  private $cityErr;
+  private $placeofworkErr;
+  private $genderErr;
+  private $entertextErr;
+  private $showError;
+  private $nameCheck;
+  private $emailCheck;
+  private $passwordCheck;
+  private $errorCount;
 
   public function doContactValidation() {
     $this->nameErr = "";

@@ -57,32 +57,15 @@ if ($loginCheck->isLogin()) {
     <div class="maincontainer">
     <h1 style="text-align: center;">Login:</h1>
     <p style="text-align:center;color:red;">
-      <?php
-      $pathUrl = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-      if (strpos($pathUrl, "email=empty") == true) {
-        echo 'Email is empty';
-      }
-      elseif (strpos($pathUrl, "email=invalid") == true) {
-        echo 'Please write a valid email';
-      }
-      elseif (strpos($pathUrl, "password=empty") == true) {
-        echo 'Password is empty';
-      }
-      elseif (strpos($pathUrl, "password=invalid") == true) {
-        echo 'Password must have 6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter.';
-      }
-      elseif (strpos($pathUrl, "submit=error") == true) {
-        echo 'These credentials are not found in the database';
-      }
-      ?>
+      <?php require 'includes/loginerrors.inc.php'; ?>
     </p>
     <div class="forma">
-    <form name="loginForm" action="includes/login.inc.php" onsubmit="return validateLogin()" method="post">
+    <form name="loginForm" action="includes/login.inc.php" onsubmit="return validateLogin()" method="post" required>
         <label for="email">Enter your e-mail:</label><br>
-        <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+        <input type="email" id="email" name="email" placeholder="Enter your email..." >
         <br>
         <label for="password">Enter your password:</label><br>
-        <input type="password" id="password" name="password" placeholder="Enter your password..." required >
+        <input type="password" id="password" name="password" placeholder="Enter your password..."  required>
         <br>
         <br>
         <input id="button" type="submit" name="submit" value="Login">
@@ -97,7 +80,7 @@ if ($loginCheck->isLogin()) {
 
     <div class="footer">
         <p>All Rights Reserved &copy;</p>
-        <p><a style="color: skyblue" href="https://github.com/BlendKrasniqi37552/ProjektiWeb">GitHub</a> | Lirian Dragusha | Blend Krasniqi | 2020</p>
+        <p><a style="color: skyblue" href="https://github.com/BlendKrasniqi37552/WeWorkWebsite">GitHub</a> | Lirian Dragusha | Blend Krasniqi | 2020</p>
     </div>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/login.js"></script>

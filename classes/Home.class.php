@@ -1,10 +1,10 @@
 <?php
 
 class Home {
-  public $connection;
-  public $result;
-  public $row;
-  public $query;
+  private $connection;
+  private $result;
+  private $row;
+  private $query;
 
   public function SectionOneTitle() {
     $this->connection = new DBConnection();
@@ -220,7 +220,7 @@ class Home {
         }
       }
   }
-  public function SectionTwoDesc() {
+  public function SectionThreeDesc() {
     $this->connection = new DBConnection();
     $this->query = "SELECT description FROM section3";
 
@@ -230,14 +230,5 @@ class Home {
         }
       }
   }
-
-
-
-
-
-
-
-
-
 
 }

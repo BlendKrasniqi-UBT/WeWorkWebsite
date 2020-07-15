@@ -1,12 +1,12 @@
 <?php
 
 class LoginValidation {
-  public $emailErr;
-  public $passwordErr;
-  public $showError;
-  public $emailCheck;
-  public $passwordCheck;
-  public $errorCount;
+  private $emailErr;
+  private $passwordErr;
+  private $showError;
+  private $emailCheck;
+  private $passwordCheck;
+  private $errorCount;
 
   public function doLoginValidation() {
     $this->emailError = "";
